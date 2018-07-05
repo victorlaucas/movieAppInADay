@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
     render() {
@@ -12,18 +13,17 @@ export default class Header extends Component {
                 <h2>West Valley City Dollar Theater</h2>
             </div>
             <div class="links">
-                <div class="link">	
-                <a href="#" class="link">About</a>
+                <div class="link">  
+                <Link to="/faq"><div>About</div></Link>
                 </div>
-                <div class="link">
+                {/* <div class="link">
                 <a href="#" class="link">Shopping Cart</a>
-                </div>
+                </div> */}
                 
                 <div class="link">
-                <a href="#" class="link">Featured Movies</a>
+                <Link to="/"><div>Movies</div></Link>
                 </div>
             </div>
-
                 </div>
             </header>
         );
