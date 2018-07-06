@@ -1,0 +1,36 @@
+.form {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-column: 1/2;
+  grid-gap: 16px;
+  align-items: left;
+  padding-left: 35px;
+  font-family: 'Roboto Condensed';
+  background-color: darkgrey;
+  color: black;
+  &__Name {
+    grid-column: 1/2;
+    align-items: left;
+  }
+  &__email {
+    grid-column: 1/2;
+    align-items: left;
+  }
+  &__CC {
+    grid-column: 1/2;
+    align-items: left;
+  }
+  .submit {
+    grid-column: 1/2;
+    align-items: left;
+    align-items: left;
+    margin-left: 35px;
+    font-family: 'Roboto Condensed';
+    border: black;
+    background-color: darkgrey;
+  }
+  .submit:hover {
+    background-color: black;
+    color: white;
+  }
+}

@@ -1,9 +1,22 @@
 .movie_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.images {
+  max-width: 440px;
+}
+.text_description {
+  max-width: 700px;
+  text-align: center;
+}
+.all_movies {
+  font-size: 3.8em;
+}
+.movie_times:hover{
+  text-decoration: none;
+  color: white;
 }

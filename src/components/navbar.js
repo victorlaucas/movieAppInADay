@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
     render() {
@@ -9,21 +10,21 @@ export default class Header extends Component {
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome">
-                <h2>West Valley City Dollar Theater</h2>
+                {/* <h2>Bottega Dollar Theater</h2> */}
+                <Link to="/"><h2>Bottga Dollar Theater</h2></Link>
             </div>
             <div class="links">
-                <div class="link">	
-                <a href="#" class="link">About</a>
+                <div class="link">  
+                <Link to="/faq"><div>About</div></Link>
                 </div>
-                <div class="link">
+                {/* <div class="link">
                 <a href="#" class="link">Shopping Cart</a>
-                </div>
+                </div> */}
                 
                 <div class="link">
-                <a href="#" class="link">Featured Movies</a>
+                <Link to="/movies"><div>Movies</div></Link>
                 </div>
             </div>
-
                 </div>
             </header>
         );
