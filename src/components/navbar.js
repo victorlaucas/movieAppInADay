@@ -10,7 +10,8 @@ export default class Header extends Component {
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome">
-                <h2>West Valley City Dollar Theater</h2>
+                {/* <h2>Bottega Dollar Theater</h2> */}
+                <Link to="/"><h2>Bottga Dollar Theater</h2></Link>
             </div>
             <div class="links">
                 <div class="link">  
@@ -21,7 +22,7 @@ export default class Header extends Component {
                 </div> */}
                 
                 <div class="link">
-                <Link to="/"><div>Movies</div></Link>
+                <Link to="/movies"><div>Movies</div></Link>
                 </div>
             </div>
                 </div>

@@ -15,6 +15,8 @@ import history from './history';
 import Header from './components/navbar';
 import Index from './components/index';
 import FaqItem from './components/faq_item';
+import Home from './components/home';
+import Form from './components/form';
 
 
 function main() {
@@ -22,8 +24,10 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
           <Switch>
-              <Route path='/' exact component={Index}/>
+              <Route path='/' exact component={Home}/>
+              <Route path='/movies' component={Index}/>
               <Route path='/faq' component={FaqItem}/>
+              <Route path='/form' component={Form}/>
           </Switch>
       </BrowserRouter>
     </Provider>

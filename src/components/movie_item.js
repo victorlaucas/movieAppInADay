@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class MovieItem extends Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class MovieItem extends Component {
       
       <br/>
       <br/>
-        <h1 className="h1">{this.props.title}</h1>
+
+        <Link to="/form"><h1>{this.props.title}</h1></Link>
         <img src={this.props.poster} className="images"/>
         <p className="text_description">{this.props.description}</p>
         <p>{this.props.time}</p>
